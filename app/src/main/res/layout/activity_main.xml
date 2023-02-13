@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id= "@+id/viewContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgrounddark"
+    tools:context=".view.MainActivity">
+
+
+    <TextView
+        android:id="@+id/tvQuote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:gravity="left"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.585"
+        tools:text="Hello World!"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+
+        android:id="@+id/tvAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        tools:text="Hello World!"
+        android:gravity="center"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="italic"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+       />
+
+    <RadioGroup
+        android:id="@+id/rgAsignaturas"
+        android:layout_width="200dp"
+        android:layout_height="192dp"
+        android:text="RadioButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.024"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="0dp">>
+
+        <RadioButton
+            android:id="@+id/SistemasGest."
+            android:layout_width="146dp"
+            android:layout_height="35dp"
+            android:text="Sistemas Gest."
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.486"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="469dp" />
+
+        <RadioButton
+            android:id="@+id/Multimedia"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:text="Multimedia"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.486"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="469dp" />
+
+        <RadioButton
+            android:id="@+id/AccesoAdatos"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="AccesoAdatos"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.486"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="469dp" />
+
+        <RadioButton
+            android:id="@+id/Interfaces"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="Interfaces"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.486"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="469dp" />
+
+        <RadioButton
+            android:id="@+id/ProgramacionS"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="ProgramacionS"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.486"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="469dp" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/RGModo"
+        android:layout_width="132dp"
+        android:layout_height="118dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.855"
+        app:layout_constraintStart_toEndOf="@+id/rgAsignaturas"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="0dp">
+
+        <RadioButton
+            android:id="@+id/Ordenado"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ordenado" />
+
+        <RadioButton
+            android:id="@+id/Aleatorio"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aleatorio" />
+    </RadioGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
